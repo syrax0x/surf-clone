@@ -17,12 +17,15 @@
           },
           colors: {
             brand: {
-              purple: '#667DFF',
-              'purple-dark': '#5568E8',
-              coral: '#F05142',
-              orange: '#F3A13F',
+              purple: '#935DEB',
+              'purple-vivid': '#E751FE',
+              magenta: '#E548FF',
+              pink: '#FF6085',
+              coral: '#EA5237',
+              orange: '#FF9332',
+              'orange-light': '#FFB347',
               green: '#26B562',
-              red: '#DF4A34',
+              red: '#EA5237',
               bg: '#FFFAF7',
               'bg-warm': '#FFF0E8',
               card: '#FFFFFF',
@@ -46,13 +49,19 @@
       background: linear-gradient(180deg, #FFE8DB 0%, #FFFAF7 30%, #FFFFFF 100%);
     }
     .gradient-cta {
-      background: linear-gradient(135deg, #F3A13F 0%, #F05142 50%, #DF4A34 100%);
+      background: linear-gradient(71deg, #E548FF 10.67%, #FF6085 55.09%);
     }
     .gradient-purple {
-      background: linear-gradient(135deg, #667DFF 0%, #8B5CF6 100%);
+      background: linear-gradient(90deg, #935DEB 0%, #E751FE 100%);
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #FF9332 0%, #FF6085 50%, #E548FF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
     .dot-grid {
-      background-image: radial-gradient(circle, rgba(102,125,255,0.12) 1px, transparent 1px);
+      background-image: radial-gradient(circle, rgba(147,93,235,0.12) 1px, transparent 1px);
       background-size: 24px 24px;
     }
     .card-shadow {
@@ -96,8 +105,7 @@
   <nav class="fixed top-0 left-0 right-0 z-[1000] h-16 flex items-center bg-white/80 backdrop-blur-xl border-b border-brand-border transition-all">
     <div class="w-full px-6 md:px-12 flex items-center justify-between max-w-[1400px] mx-auto">
       <div class="flex items-center gap-2">
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#667DFF"/><path d="M8 10h12M8 14h8M8 18h10" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
-        <span class="text-xl font-bold text-brand-dark">Surf</span>
+        <img src="logo.svg" alt="CoinStats" width="132" height="28">
       </div>
       <div class="hidden md:flex items-center gap-6">
         <a href="#" class="text-[14px] font-medium text-brand-gray hover:text-brand-dark transition-colors">Skill</a>
@@ -125,7 +133,7 @@
 
         <!-- Main Heading -->
         <h1 class="text-[48px] md:text-[72px] lg:text-[84px] font-bold leading-[1.05] tracking-tight mb-6">
-          One Skill. <span class="bg-gradient-to-r from-[#E5A44E] via-[#D06B42] to-[#C44B38] bg-clip-text text-transparent">All Crypto Data.</span><br>
+          One Skill. <span class="gradient-text">All Crypto Data.</span><br>
           Start Free. Zero Setup.
         </h1>
 
